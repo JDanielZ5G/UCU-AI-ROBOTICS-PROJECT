@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCU AI & Robotics Chapter - Home</title>
+    <style>
+        :root {
+            --primary: #2a3492;
+            --secondary: #4CAF50;
+            --background: #f5f5f7;
+            --text: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-image: image();
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(42, 52, 146, 0.8), rgba(42, 52, 146, 0.9)),
+                        url('/placeholder.svg?height=400&width=1200');
+            background-size: cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">UCU AI & Robotics</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="robotics.html">Robotics</a></li>
+                <li><a href="ai.html">AI</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScf2sWNBBc6EATsqL9RfisOuGRyCVcMYurcO-ciNZgmqMcMiw/viewform?usp=pp_url">Join Us-Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to UCU AI & Robotics Chapter
+            <p>The Center of Excellence in Artificial Intelligence and Robotics <br>research @ Uganda Christian University</p>
+    </section>
+
+    <main class="container">
+        <div class="card">
+            <h2>About Our Chapter</h2>
+            <p>The AI and Robotics Chapter at Uganda Christian University is dedicated to advancing technological innovation and research in artificial intelligence and robotics.</p>
+        </div>
+
+        <div class="card">
+            <h2>Chapter President's Message</h2>
+            <p>Welcome to our community of innovators and tech enthusiasts. Together, we're building the future of AI and robotics at UCU.</p>
+        </div>
+
+        <div class="card">
+            <h2>Benefits of Joining</h2>
+            <ul>
+                <li>Access to state-of-the-art robotics lab</li>
+                <li>Hands-on AI project experience</li>
+                <li>Networking opportunities</li>
+                <li>Workshop and training sessions</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 UCU AI & Robotics Chapter. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://Twitter.com/UCU_ComputEng"><button style="padding:1rem 2rem; background-color: #45a049;color:#fff;
+                border: none;border-radius: 5px;cursor: pointer;">Follow Us on X</button></a> 
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll animation for cards
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        cards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.5s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
