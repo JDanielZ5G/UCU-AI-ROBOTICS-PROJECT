@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #135286;
+    text-align: center;
+    color: #fdfafc;
+    font-family: 'Trebuchet MS', 'Lucidia Sana Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+}
+header{
+    background-color: #135286;
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucidia Sana Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif' ;
+    text-align: center;
+    color: aliceblue;
+}
+section{
+    margin-bottom: 40px;
+}
+h2{
+    color: #f8f5f7;
+    text-align: center;
+}
+p{
+    color: #f8f5f7;
+    font-family: 'Trebuchet MS', 'Lucidia Sana Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucidia Sana Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
+    color: #f8f5f7;
+}
+li{
+    margin-bottom: 10px;
+}
+#tianah-project img{
+    width: 50%;
+    height:auto;
+    margin: 20px auto;
+}
+.center-image{border-radius: 5%;
+    width: 600px;
+    height: 300px;
+}
+.taina{
+    border-radius: 5%;
+    width: 10px;
+    height: 5px;
+}
+
+
+
+
+
