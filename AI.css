@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #135286;
+    background-color: rgb(58, 58, 196);
     text-align: center;
     color: #fdfafc;
     font-family: 'Trebuchet MS', 'Lucidia Sana Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif';
 }
 header{
-    background-color: #135286;
+    background-color: rgb(58, 58, 196);
     padding: 20px;
     font-family:'Trebuchet MS', 'Lucidia Sana Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial','sans-serif' ;
     text-align: center;
