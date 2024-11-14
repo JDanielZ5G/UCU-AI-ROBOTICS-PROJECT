@@ -1,0 +1,67 @@
+.all_first div{
+    display: inline-block;
+    padding: 30px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+}
+
+.left{
+    flex: 2;
+    padding: 30px;
+    text-align: left;
+    
+
+}
+.right{
+    flex: 3;
+    padding: 30px;
+    text-align: right;
+
+}
+ul{
+justify-content: space-between;
+
+}
+ul li{
+    display: inline-block;
+    padding: 40px;
+    
+
+}
+p{
+text-align: left;
+font-size: 20px;
+
+}
+.nav_pills{
+text-align: center;
+padding-top: 50px;
+
+
+
+}
+nav div a{
+    text-decoration: none;
+    color: rgb(0, 26, 255);
+    font-size: 70px;
+    
+
+}
+.img1{
+
+    border-radius: 10%;
+    border: 5px solid rgb(245, 245, 245);
+}
+.vedio{
+    text-align: center;
+    padding: 40px 60px;
+    background-color: black;
+}
+ul li.in{
+    display: inline-block;
+    padding: 10px;
+    
+
+}

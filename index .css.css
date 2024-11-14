@@ -1,0 +1,44 @@
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: darkgray;
+}
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+p{
+    color: lightgray;
+    font-size: i6px;
+    line-height: 1.dvh;
+    margin-bottom: 15px;
+}
+img{
+    height: 3oopx;
+    width: 300px;
+    border-radius: 80%;
+}
+
+.all_first div{
+    display: inline-block;
+    padding: 30px;
+}
+
+.left{
+    flex: 2;
+    padding: 30px;
+
+}
+.right{
+    flex: 3;
+    padding: 30px;
+
+}
+ul li{
+    display: inline-block;
+
+}
+    
