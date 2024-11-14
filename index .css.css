@@ -43,8 +43,7 @@ ul li{
 }
 .content {
     position: relative;
-    /* Add your desired styling for text, buttons, etc. */
-    color: white; /* Ensure text is visible over the video */
+    color: white;
     text-align: center;
     padding: 20px;
 }
