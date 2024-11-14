@@ -41,4 +41,11 @@ ul li{
     display: inline-block;
 
 }
+.content {
+    position: relative;
+    /* Add your desired styling for text, buttons, etc. */
+    color: white; /* Ensure text is visible over the video */
+    text-align: center;
+    padding: 20px;
+}
     
